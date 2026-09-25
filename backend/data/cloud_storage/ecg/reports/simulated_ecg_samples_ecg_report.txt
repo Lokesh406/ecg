@@ -1,0 +1,11 @@
+ECG Analysis Report
+===================
+
+File: simulated_ecg_samples.csv
+Heart Rate: 0.29641827912721286
+Peak Count: 13
+Mean Value: 0.05517928
+Std Deviation: 0.16147033551300252
+Classification: Abnormal
+
+Disclaimer: Educational ECG analysis only. This is not medical diagnosis.

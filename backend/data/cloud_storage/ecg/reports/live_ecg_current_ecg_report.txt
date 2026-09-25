@@ -1,0 +1,11 @@
+ECG Analysis Report
+===================
+
+File: live_ecg_current.csv
+Heart Rate: 13.636363636363635
+Peak Count: 6
+Mean Value: 0.5583333333333333
+Std Deviation: 0.46798919740618894
+Classification: Abnormal
+
+Disclaimer: Educational ECG analysis only. This is not medical diagnosis.

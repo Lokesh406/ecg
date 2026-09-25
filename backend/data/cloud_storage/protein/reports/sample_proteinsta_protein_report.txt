@@ -1,0 +1,10 @@
+Protein Analysis Report
+=======================
+
+Protein: sample_protein.fasta
+Sequence Length: 24
+Molecular Weight: 3242.59
+Hydrophobicity: 1.4083
+Secondary Structure: HHCEEHHCEEECHEEHCEHCCCCH
+
+Disclaimer: Educational protein analysis only. This is not experimental 3D structure prediction.

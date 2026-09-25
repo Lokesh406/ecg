@@ -1,0 +1,361 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #e5edf7;
+  background: #0b1020;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b1020, #111827);
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 24px 48px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0 24px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.nav-items {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background: transparent;
+  color: #dfeaf8;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 999px;
+  padding: 8px 14px;
+}
+
+.nav-button.active {
+  background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+  border-color: transparent;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0 18px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 2.2vw, 3rem);
+}
+
+.status-pill {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.45);
+  color: #bbf7d0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.page {
+  padding-top: 12px;
+}
+
+.page h1 {
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.stat-box {
+  background: rgba(17, 24, 39, 0.9);
+  border-radius: 16px;
+  padding: 22px 18px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-box strong {
+  font-size: 2rem;
+}
+
+.accent-blue { border-top: 4px solid #38bdf8; }
+.accent-green { border-top: 4px solid #34d399; }
+.accent-purple { border-top: 4px solid #a78bfa; }
+.accent-gold { border-top: 4px solid #fbbf24; }
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.module-card {
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+.module-card.large {
+  min-height: 210px;
+}
+
+.module-card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.module-card p {
+  color: #d8e2f0;
+}
+
+.module-card button,
+.panel button {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.esg, .ecg {
+  border-top: 4px solid #0ea5e9;
+}
+
+.protein {
+  border-top: 4px solid #10b981;
+}
+
+.panel {
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  padding: 22px;
+  margin-top: 18px;
+}
+
+.activity-list,
+.report-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.activity-list li,
+.report-list li {
+  display: grid;
+  grid-template-columns: 100px minmax(160px, 1fr) minmax(190px, auto) auto;
+  gap: 14px;
+  align-items: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  padding-bottom: 10px;
+}
+
+.report-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  background: rgba(96, 165, 250, 0.18);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  color: #dbeafe;
+  padding: 6px 10px;
+  border-radius: 999px;
+  justify-self: start;
+}
+
+.muted {
+  color: #9ca3af;
+}
+
+.status {
+  color: #bbf7d0;
+  justify-self: end;
+}
+
+input[type='file'], textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  background: rgba(15, 23, 42, 0.8);
+  color: white;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.message {
+  padding-top: 12px;
+  color: #bbf7d0;
+}
+
+.error-message {
+  color: #fecaca;
+}
+
+.download-button,
+.delete-button {
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  white-space: nowrap;
+}
+
+.delete-button {
+  background: linear-gradient(135deg, #dc2626, #ef4444) !important;
+}
+
+.disclaimer {
+  color: #fcd34d;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.result-panel {
+  margin-top: 20px;
+}
+
+.chart-panel {
+  overflow: hidden;
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.panel-heading h3 {
+  margin: 4px 0 0;
+}
+
+.eyebrow {
+  color: #67e8f9;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.chart-meta {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.chart-frame {
+  min-height: 280px;
+  margin-top: 14px;
+  padding: 12px 4px 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.35));
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  border-radius: 12px;
+}
+
+.structure-chart {
+  min-height: 180px;
+}
+
+.hydrophobicity-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 56px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  color: #cbd5e1;
+}
+
+.hydrophobicity-row strong {
+  color: #6ee7b7;
+  text-align: right;
+}
+
+.hydrophobicity-chart {
+  height: 44px;
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.72);
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .activity-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .report-list li {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .panel-heading,
+  .hydrophobicity-row {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
